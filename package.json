@@ -1,0 +1,43 @@
+
+{
+  "name": "mongodb-books-collection",
+  "version": "1.0.0",
+  "description": "A MongoDB project demonstrating CRUD operations, advanced queries, aggregation pipelines, and indexing using a books dataset.",
+  "main": "insert_books.js",
+  "type": "module",
+  "scripts": {
+    "start": "node insert_books.js",
+    "insert": "node insert_books.js",
+    "find-genre": "node queries/findGenre.js",
+    "find-author": "node queries/findAuthor.js",
+    "find-after-year": "node queries/findAfterYear.js",
+    "update-price": "node queries/updatePrice.js",
+    "delete-book": "node queries/deleteBook.js",
+    "find-instock": "node queries/findInStockAfter2010.js",
+    "sort-price-asc": "node queries/sortPriceAsc.js",
+    "sort-price-desc": "node queries/sortPriceDesc.js",
+    "paginate": "node queries/pagination.js",
+    "aggregate-avg-price": "node aggregations/avgPriceByGenre.js",
+    "aggregate-top-author": "node aggregations/topAuthor.js",
+    "aggregate-decade": "node aggregations/booksByDecade.js",
+    "index-title": "node indexes/indexTitle.js",
+    "index-compound": "node indexes/compoundIndex.js",
+    "explain-index": "node indexes/explainIndex.js"
+  },
+  "keywords": [
+    "mongodb",
+    "nodejs",
+    "database",
+    "aggregation",
+    "indexing",
+    "books"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^6.7.0",
+    "dotenv": "^16.3.1"
+  }
+}
+
+
